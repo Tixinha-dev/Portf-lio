@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto To Do List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Css/index.css">
+    <script src="Js/index.js" defer></script>
+</head>
+<body>
+    <div id="main-container">
+        <div id="add-container">
+            <h2>Adicione as suas tarefas:</h2>
+            <form action="">
+                <input type="text" name="task" id="task" placeholder="O que você tem pra fazer?">
+                <button type="submit" id="add"><i class="bi bi-plus"></i></button>
+            </form>
+        </div>
+            <div id="task-container">
+                <h2>Veja a suas tarefas:</h2>
+                <p id="empty-tasks">Não há tarefas cadastradas</p>
+                <!-- Template -->
+                <div class="task hide">
+                    <i class="bi bi-check"></i>
+                    <span class="task-title">Titulo da tarefa</span>
+                    <i class="bi bi-trash "></i>
+                </div>
+                <!-- Template -->
+            </div>
+    </div>
+</body>
+</html>

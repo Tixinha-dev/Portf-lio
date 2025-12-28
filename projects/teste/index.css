@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Cabin Sketch;
+  font-weight: 100;
+}
+body {
+  background: -webkit-linear-gradient(top, #245a40, #000000);
+}
+h1 {
+  text-align: center;
+  margin-top: 1.5%;
+  font-size: 40px;
+}
+div[name ="introduction-box"] {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 0px; */
+}
+div[name ="introduction-box"] h2 {
+  font-size: 30px;
+  width: 600px;
+  margin-top: 15px;
+  text-align: center;
+}
+div[name ="introduction-box"] div[name="primary-box"] {
+  display: flex;
+  margin: 50px 0;
+}
+div[name ="introduction-box"] div button {
+  border: 3px solid #1e764c;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 35px;
+  padding: 5px;
+}
+div[name ="introduction-box"] div button:hover{
+  cursor: pointer;
+}
+div[name ="introduction-box"] div[name="secundary-box"] {
+  font-size: 25px;
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 60%;
+  height: 90px;
+  margin: 0;
+}
+/*  */
+div[name ="inputs-box"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 35vh;
+  margin: 0 auto;
+  border: 1px solid;
+  border-radius: 8px;
+  background: var(--secundria, rgba(23, 58, 41, 0.377));
+}
+div[name ="inputs-box"] div[name="inputs-description-box"] {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 20px;
+}
+div[name ="inputs-box"] .section-input-output {
+  display: flex;
+  /* border: 1px solid rebeccapurple; */
+  width: 60%;
+  flex-direction: column;
+  font-size: 20px;
+}
+div[name ="inputs-box"] .section-input-output input {
+  width: 100%;
+  height: 40px;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  text-align: center;
+}
+h3 {
+  margin: 2.5% 0 5% 0;
+  text-align: center;
+  font-size: 25px;
+}
+/* breackpoints */
+@media (max-width: 768px) {
+  h1{
+    font-size: 35px;
+    margin-top: 2%;
+  }
+  div[name ="introduction-box"] div[name="secundary-box"] {
+    font-size: 23px;
+    margin: 5px 20%;
+    width: 80%;
+    height: 60px;
+  }
+  div[name ="introduction-box"] h2{
+    width: 490.531px;
+    font-size: 30px;
+  }
+  div[name ="introduction-box"] div button {
+  font-size: 25px;
+  padding: 5px;
+}
+  div[name ="inputs-box"] {
+  width: 50%;
+  height: 60vh;
+  margin-top: 3%;
+}
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 30px;
+    margin-top: 12%;
+  }
+  div[name ="introduction-box"] div[name="secundary-box"] {
+    font-size: 19px;
+    width: 90%;
+    margin: 10px 5%;
+  }
+  div[name ="introduction-box"] h2 {
+    font-size: 24px;
+    margin: 5px 6px;
+    width: 300px;
+  }
+  div[name ="introduction-box"] div button {
+    font-size: 20px;
+    padding: 5px;
+  }
+  div[name ="inputs-box"] p{
+    font-size: 17px;
+  }
+ div[name ="inputs-box"] {
+    width: 70%;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  div[name ="inputs-box"] .section-input-output label {
+  font-size: 15px;
+}
+ div[name ="inputs-box"] .section-input-output input {
+    font-size: 13px;
+  }
+}
+@media (max-width: 375px) {
+  h1 {
+    font-size: 28px;
+    margin-top: 20%;
+  }
+  div[name ="introduction-box"] h2 {
+    font-size: 20px;
+    margin: 11px;
+    width: 250px;
+  }
+  div[name ="introduction-box"] div[name="secundary-box"] {
+    font-size: 18px;
+  }
+
+  div[name ="inputs-box"] .section-input-output input {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  h1 {
+    font-size: 26px;
+    margin-top: 30%;
+  }
+  div[name ="introduction-box"] h2 {
+    font-size: 17px;
+    margin: 12px 3px;
+    width: 220px;
+  }
+  div[name ="introduction-box"] div[name="secundary-box"] {
+    font-size: 17px;
+  }
+  div[name ="inputs-box"] div[name="inputs-description-box"] {
+    font-size: 17px;
+  }
+  div[name ="inputs-box"] .section-input-output input {
+    font-size: 12px;
+  }
+  div[name ="inputs-box"] {
+  width: 55vh;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+/* Animação */
+  @keyframes button-background-animation {
+    from {background-color: auto;}
+    to{background-color: #808080;}
+  }
+  @keyframes icon-background-animation{
+    from{scale: auto;}
+    to{scale: 70%;}
+  }

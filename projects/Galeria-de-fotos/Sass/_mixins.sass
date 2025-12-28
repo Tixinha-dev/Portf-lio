@@ -1,0 +1,35 @@
+// O mixin é um recurso para reaproveitamento de código, ou seja, é uma função que pode ser usada diversas vezes sem 
+// precisar repetir as propriedades. 
+@use 'variaveis'
+
+@mixin container
+ max-width: variaveis.$container-width
+ padding: 1.5rem
+ margin: 0 auto
+//  border: 1px solid white
+
+@mixin flex-center
+ display: flex
+ justify-content: center
+ align-items: center
+ 
+@mixin bg-img($img)
+ background-image: url('../img/#{$img}')
+ background-size: 100%
+ background-position: center
+ background-repeat: no-repeat
+ filter: grayscale(100%)
+ transition: .6s
+ width: 100%
+ height: 250px
+
+ &:hover
+    background-size: 110%
+    filter: grayscale(0%)
+    background-image: linear-gradient(rgba(0,0 ,0 ,.5 ), rgba(0,0 ,0 ,.5 )),url('../img/#{$img}')
+
+@mixin mobile
+ @media(max-width: 425px)
+    @content
+    
+    

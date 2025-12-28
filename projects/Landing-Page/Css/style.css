@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-size: 13.3px;
+}
+body{
+  width: 100%;
+  height: auto;
+  background-image: url(../img/backgroundLp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+#container-principal{
+  background-color: rgb(24, 24, 24);
+}
+footer p{
+  font-size: 14px;
+}
+.form-check p{
+  color: red;
+}
+
+/* Area de testes das divs e seus filhos */
+/* .row{
+  border: 2px solid blue;
+}
+#container-da-imagem{
+  border: 1px solid white;
+}
+#container-da-imagem img{
+  border: 1px solid yellow;
+}
+.container p{
+  border: 1px solid green;
+} */

@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container-principal-da-tela-de-login{
+    /* border: 1px solid black; */
+}
+/* .col-md-6,.col-md-12,a{
+    border: 1px solid black;
+} */

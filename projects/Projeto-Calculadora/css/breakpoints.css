@@ -1,0 +1,70 @@
+@media(max-width:768px) and (max-height:800px){
+    body main{
+        height: 60%;
+        margin-bottom: 100px;
+}
+}
+@media (max-width: 768px) {
+  body header h1{
+    margin-top: 20px;
+  }
+  body main {
+    margin-top: 15px;
+    width: 40%;
+    height: auto;
+  }
+  body #container-do-teclado {
+    /* width: 100%; */
+    margin-top: 20px;
+    height: 220px;
+  }
+  body .fileira-de-teclas #botao-apagar {
+    margin-right: 110px;
+  }
+  body .fileira-de-teclas button {
+    width: 40px;
+    height: 35px;
+  }
+  body .fileira-de-teclas #botao-0 {
+    width: 153px;
+  }
+}
+@media (max-width: 425px) {
+  body header h1{
+    font-size: 25px;
+  }
+  body main {
+    width: 70%;
+  }
+  body .fileira-de-teclas #botao-0 {
+    width: 69.5%;
+  }
+  body .fileira-de-teclas button {
+    width: 45px;
+  }
+  body .fileira-de-teclas #botao-apagar {
+    margin-right: 118px;
+  }
+  body .fileira-de-teclas {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  body header h1{
+    font-size: 23px;
+  }
+  body main {
+    width: 80%;
+  }
+}
+@media (max-width: 320px) {
+  body header h1{
+    font-size: 20px;
+  }
+  body .fileira-de-teclas button {
+    width: 38px;
+  }
+  body .fileira-de-teclas #botao-apagar {
+    margin-right: 95px;
+  }
+}
