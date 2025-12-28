@@ -1,20 +1,41 @@
-const text = "Densenvolvedor front-end júnior";
+const sequence = [
+  { text: "Desenvolvedor Front-end Júnior | ", className: "" },
+  { text: "HTML", className: "html" },
+  { text: ", ", className: "" },
+  { text: "CSS", className: "css" },
+  { text: ", ", className: "" },
+  { text: "JavaScript", className: "js" },
+];
+
 const typingElement = document.getElementById("typing");
 
-let index = 0;
+let partIndex = 0;
+let charIndex = 0;
+let currentSpan = null;
 
 function typeEffect() {
-  if (index < text.length) {
-    typingElement.textContent += text.charAt(index);
-    index++;
-    setTimeout(typeEffect, 70);
-  }
-}
-  const hamburger = document.getElementById("hamburger");
-  const navList = document.querySelector(".nav-list");
+  if (partIndex >= sequence.length) return;
 
-  hamburger.addEventListener("click", () => {
-    navList.classList.toggle("active");
-  });
+  const part = sequence[partIndex];
+
+  // cria um span novo quando começa uma parte
+  if (charIndex === 0) {
+    currentSpan = document.createElement("span");
+    if (part.className) {
+      currentSpan.className = part.className;
+    }
+    typingElement.appendChild(currentSpan);
+  }
+
+  currentSpan.textContent += part.text.charAt(charIndex);
+  charIndex++;
+
+  if (charIndex === part.text.length) {
+    partIndex++;
+    charIndex = 0;
+  }
+
+  setTimeout(typeEffect, 60);
+}
 
 typeEffect();

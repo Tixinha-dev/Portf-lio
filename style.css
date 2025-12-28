@@ -188,7 +188,7 @@ justify-content: space-between;
     color: #fff;
     text-align: center;
     opacity: 0;
-    transition: 0.6s;
+    transition: opacity 0.6s ease;
     width: 80%;
     pointer-events: none;
 
@@ -196,7 +196,13 @@ justify-content: space-between;
 
 .project-card:hover .project-info {
     opacity: 1;
-    pointer-events: all;
+     animation: liberarClick 0s linear 0.6s forwards;
+}
+
+@keyframes liberarClick {
+  to {
+    pointer-events: auto;
+  }
 }
 
 .project-info h3 {
@@ -274,6 +280,18 @@ footer .icones img{
   margin-left: 1px;
   animation: blink 1s infinite;
 }
+.html {
+  color: #e34c26;
+}
+
+.css {
+  color: #264de4;
+}
+
+.js {
+  color: #f7df1e;
+}
+
 
 @keyframes blink {
   0%, 50%, 100% { opacity: 1; }
