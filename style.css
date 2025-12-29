@@ -341,7 +341,12 @@ footer .icones img {
 }
 @media (max-width: 425px) {
   .main {
-    background-position: calc(100%);
+    background-position: calc(50vh);
+    min-height: calc(70vh - 80px);
+    padding-left: 5%;
+  }
+  .main h1{
+    font-size: 32px;
   }
   .about div {
     padding: 0;
@@ -385,13 +390,11 @@ footer .icones img {
   }
   .about img {
     margin-top: 14px;
-    width: 100%;
   }
   .projects {
     padding: 30px 0px;
   }
   .project-list img {
-    width: 100%;
     margin-left: 1%;
     margin-right: 1%;
   }
